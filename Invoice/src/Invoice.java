@@ -11,8 +11,8 @@ public class Invoice {
 	}
 	
 	public Invoice(String inName, String inPart) {
-		//name = inName;
-		//String part = inPart;
+		name = inName;
+		String part = inPart;
 	}
 
 	public void settimeworked(int inhours) {
@@ -36,6 +36,7 @@ public class Invoice {
 	}
 	
 	public void printinvoice() {
-		System.out.println("Name of Project: "+ name + "Total number of hours worked: " + hours + "Expenses: "+ expenses + "Rate charged: "+ rate + "Total amount charged: "+ (hourlycharges+expenses));
+		System.out.println("Name of Project: "+ name + ", Total number of hours worked: " + hours + ", Expenses: "+ expenses + ", Rate charged: "+ rate + ", Total amount charged: "+ computetotalcharges());
 	}
+
 }
