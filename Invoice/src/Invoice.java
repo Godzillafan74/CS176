@@ -6,11 +6,15 @@ public class Invoice {
 	private String name;
 	private double hourlycharges;
 	
-	public Invoice(String inName, String inPart) {
-		name = inName;
-		String part = inPart;
+	public Invoice() {
+		
 	}
 	
+	public Invoice(String inName, String inPart) {
+		//name = inName;
+		//String part = inPart;
+	}
+
 	public void settimeworked(int inhours) {
 		hours = inhours;
 	}
